@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="main.56ZT0Ie0.js" defer></script>
+    <title>Imgur <-> Wordpress</title>
+</head>
+<body>
+<div class="container mx-auto text-sm w-5/6">
+    <form class="mt-8 mb-8 input-form">
+        <label for="search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300">album link</label>
+        <div class="relative">
+            <input type="search" id="search" class="block p-4 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 input-form__input" placeholder="Link album" required>
+            <button type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 input-form__button">Tạo</button>
+        </div>
+    </form>
+    <div class="mb-4 w-full bg-gray-50 rounded-lg border border-gray-200 dark:bg-gray-700 dark:border-gray-600 drop-shadow-lg">
+        <div class="py-2 px-4 bg-white rounded-t-lg dark:bg-gray-800">
+            <label for="comment" class="sr-only">wordpress code</label>
+            <textarea id="comment" rows="9" class="px-0 w-full text-gray-900 bg-white border-0 dark:bg-gray-800 focus:ring-0 dark:text-white dark:placeholder-gray-400 textarea-wordpress" readonly></textarea>
+        </div>
+        <div class="flex justify-between items-center py-2 px-3 border-t dark:border-gray-600">
+            <button class="inline-flex items-center py-2.5 px-4 font-medium text-center text-white bg-blue-700 rounded-lg focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900 hover:bg-blue-800 copy-all">
+                Copy All
+            </button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
