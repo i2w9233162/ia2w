@@ -52,7 +52,7 @@ if (status) {
 document.querySelector('.input-form').addEventListener('submit', async (event) => {
 event.preventDefault();
 
-const is_valid_link = form_input.value.match(/imgur\.com\/a\/(\w+)/);
+const is_valid_link = form_input.value.match(/imgur\.(?:com|io)\/a\/(\w+)/);
 
 if (is_valid_link) {
     text_area.value = '';
